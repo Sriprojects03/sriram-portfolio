@@ -1,0 +1,4562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sri Ram — SEO Specialist Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+
+   
+   *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+   html{
+    scroll-behavior:smooth;
+    overflow-x:hidden;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* NAVBAR */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#0f172a;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    z-index:9999;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:#fff;
+}
+
+/* MOBILE */
+
+@media(max-width:991px){
+
+.menu-toggle{
+    display:block;
+}
+
+.desktop-btn{
+    display:none;
+}
+
+#navbar-menu{
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#111827;
+    max-height:0;
+    overflow:hidden;
+    transition:.4s ease;
+}
+
+#navbar-menu.active{
+    max-height:400px;
+    padding:20px 0;
+}
+
+.nav-links{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+.nav-links li{
+    width:100%;
+    text-align:center;
+}
+
+.nav-links a{
+    display:block;
+    padding:10px;
+}
+
+}
+
+.logo h2{
+    color:#38bdf8;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    line-height:1.7;
+    color:#e5e7eb;
+    letter-spacing:-0.2px;
+}
+
+h1{
+    font-size:48px;
+    font-weight:800;
+    line-height:1.1;
+}
+
+h2{
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+h3{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+p{
+    font-size:16px;
+    color:#cbd5e1;
+}
+
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+.btn-primary{
+    background:#38bdf8;
+    color:#000;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.btn-secondary{
+    border:1px solid #38bdf8;
+    color:#38bdf8;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    margin-top: 2rem;
+}
+
+.hero-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+    margin-top: 5.5rem;
+}
+
+.hero-badge{
+    background:rgba(56,189,248,.15);
+    color:#38bdf8;
+    padding:10px 18px;
+    border-radius:50px;
+    display:inline-block;
+    margin-bottom:20px;
+
+}
+
+.hero-content h1{
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-content h1 span{
+    color:#38bdf8;
+}
+
+.hero-content p{
+    font-size:18px;
+    color:#cbd5e1;
+    margin-bottom:30px;
+    line-height:1.8;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    margin-bottom:40px;
+}
+
+.hero-stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.stat-box{
+    background:#1e293b;
+    padding:7px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.stat-box h3{
+    color:#38bdf8;
+    font-size:28px;
+}
+.stat-box p{
+
+    font-size:16px;
+}
+.image-wrapper{
+    text-align:center;
+    margin-top: -5rem;
+}
+
+.image-wrapper img{
+    width:400px;
+    height:400px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #38bdf8;
+    box-shadow:0 0 50px rgba(56,189,248,.4);
+}
+.about{
+    padding:120px 0;
+    margin-top: -1rem;
+    background:#111827;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title span{
+    color:#38bdf8;
+    font-weight:600;
+}
+
+.section-title h2{
+    font-size:42px;
+    margin-top:10px;
+}
+
+.about-content{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-text p{
+    color:#cbd5e1;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.about-highlights{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.highlight-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.highlight-card:hover{
+    transform:translateY(-8px);
+}
+
+.highlight-card h3{
+    font-size:36px;
+    color:#38bdf8;
+}
+
+.highlight-card p{
+    margin-top:10px;
+}
+
+.skills{
+    padding:120px 0;
+    margin-top: -9rem;
+    background:#0f172a;
+}
+
+.skills .section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.skill-card:last-child{
+    grid-column:2 / 4;
+}
+.skills .section-title span{
+    color:#38bdf8;
+    font-weight:600;
+}
+
+.skills .section-title h2{
+    font-size:42px;
+    margin:15px 0;
+}
+
+.skills .section-title p{
+    color:#cbd5e1;
+    max-width:700px;
+    margin:auto;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.skill-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:18px;
+    transition:.3s ease;
+    border:1px solid rgba(255,255,255,.05);
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+    border-color:#38bdf8;
+}
+
+.skill-card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.skill-card p{
+    color:#cbd5e1;
+    line-height:1.7;
+}
+
+.experience{
+    padding:120px 0;
+    margin-top: -9rem;
+    background:#111827;
+}
+
+.timeline{
+    position:relative;
+    max-width:900px;
+    margin:auto;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:20px;
+    top:0;
+    width:3px;
+    height:100%;
+    background:#38bdf8;
+}
+
+.timeline-item{
+    position:relative;
+    padding-left:70px;
+    margin-bottom:50px;
+}
+
+.timeline-dot{
+    position:absolute;
+    left:10px;
+    top:15px;
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:#38bdf8;
+    border:4px solid #0f172a;
+}
+
+.timeline-content{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.timeline-content:hover{
+    transform:translateY(-5px);
+}
+
+.timeline-date{
+    color:#38bdf8;
+    font-weight:600;
+    display:block;
+    margin-bottom:10px;
+}
+
+.timeline-content h3{
+    margin-bottom:5px;
+}
+
+.timeline-content h4{
+    color:#cbd5e1;
+    margin-bottom:15px;
+}
+
+.timeline-content ul{
+    padding-left:20px;
+}
+
+.timeline-content li{
+    color:#cbd5e1;
+    margin-bottom:10px;
+}
+
+
+.projects{
+    padding:120px 0;
+    margin-top: -10rem;
+    background:#0f172a;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-heading span{
+    color:#38bdf8;
+    font-weight:600;
+}
+
+.section-heading h2{
+    font-size:42px;
+    margin:15px 0;
+}
+
+.section-heading p{
+    color:#cbd5e1;
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.project-card{
+    background:#1e293b;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:25px;
+}
+
+.project-content h3{
+    margin-bottom:10px;
+}
+
+.project-content p{
+    color:#cbd5e1;
+}
+
+.view-btn{
+    margin-top:20px;
+    background:#38bdf8;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+/* MODAL */
+
+.modal{
+    position:fixed;
+    inset:0;
+    display:none;
+    z-index:9999;
+}
+
+.modal.active{
+    display:block;
+}
+
+.modal-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.8);
+}
+
+.modal-box{
+    position:relative;
+    width:90%;
+    max-width:1000px;
+    height:85vh;
+    overflow-y:auto;
+    background:#111827;
+    margin:40px auto;
+    padding:40px;
+    border-radius:20px;
+    z-index:2;
+}
+
+.close-modal{
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:#38bdf8;
+    cursor:pointer;
+}
+
+.case-gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    margin-top:30px;
+}
+
+.case-gallery img{
+    width:100%;
+    border-radius:10px;
+}
+
+.result-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin:30px 0;
+}
+
+.result-box{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.result-box h3{
+    color:#38bdf8;
+}
+
+@media(max-width:768px){
+
+.projects-grid{
+    grid-template-columns:1fr;
+}
+
+.case-gallery{
+    grid-template-columns:1fr;
+}
+
+.result-grid{
+    grid-template-columns:1fr;
+}
+
+.modal-box{
+    padding:25px;
+}
+}
+
+
+.achievements-section{
+    padding:100px 8%;
+    background:#020617;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title span{
+    color:#38bdf8;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#fff;
+    margin:15px 0;
+}
+
+.section-title p{
+    color:#94a3b8;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.achievement-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.achievement-card{
+    background:#0f172a;
+    border:1px solid rgba(56,189,248,.15);
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+    transition:.4s;
+}
+
+.achievement-card:hover{
+    transform:translateY(-10px);
+    border-color:#38bdf8;
+    box-shadow:0 15px 40px rgba(56,189,248,.15);
+}
+
+.achievement-card h3{
+    font-size:42px;
+    color:#38bdf8;
+    margin-bottom:12px;
+    font-weight:700;
+}
+
+.achievement-card p{
+    color:#cbd5e1;
+    font-size:16px;
+    line-height:1.6;
+}
+
+@media(max-width:768px){
+
+    .achievements-section{
+        padding:70px 20px;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .achievement-card{
+        padding:25px 20px;
+    }
+
+    .achievement-card h3{
+        font-size:34px;
+    }
+
+}
+
+.industries-section{
+    padding:100px 8%;
+    background:#0f172a;
+}
+
+.industries-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:60px;
+}
+
+.industry-card{
+    background:#1e293b;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    transition:.4s;
+}
+
+.industry-card:hover{
+    transform:translateY(-10px);
+    border-color:#38bdf8;
+    box-shadow:0 15px 35px rgba(56,189,248,.15);
+}
+
+.industry-card span{
+    font-size:42px;
+    display:block;
+    margin-bottom:15px;
+}
+
+.industry-card h3{
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+}
+
+@media(max-width:768px){
+
+    .industries-section{
+        padding:70px 20px;
+    }
+
+    .industries-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .industry-card{
+        padding:20px;
+    }
+
+    .industry-card span{
+        font-size:32px;
+    }
+
+    .industry-card h3{
+        font-size:15px;
+    }
+
+}
+
+.process-section{
+    padding:100px 8%;
+    background:#020617;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:60px;
+}
+
+.process-card{
+    background:#0f172a;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:30px;
+    transition:.4s;
+    position:relative;
+}
+
+.process-card:hover{
+    transform:translateY(-10px);
+    border-color:#38bdf8;
+    box-shadow:0 15px 35px rgba(56,189,248,.15);
+}
+
+.step-number{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#38bdf8;
+    color:#000;
+    font-size:22px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.process-card h3{
+    color:#fff;
+    margin-bottom:15px;
+}
+
+.process-card p{
+    color:#94a3b8;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+    .process-section{
+        padding:70px 20px;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+.tools-section{
+    padding:100px 0;
+    background:#0f172a;
+}
+
+.tools-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+    margin-top:50px;
+}
+
+.tool-pill{
+    padding:14px 24px;
+    background:#1e293b;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:50px;
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.tool-pill:hover{
+    border-color:#38bdf8;
+    color:#38bdf8;
+    transform:translateY(-3px);
+}
+
+@media(max-width:768px){
+
+.tools-list{
+    gap:10px;
+}
+
+.tool-pill{
+    font-size:14px;
+    padding:12px 18px;
+}
+
+}
+
+.services-section{
+    padding:100px 8%;
+    background:#020617;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+    margin-top:60px;
+}
+
+.service-card{
+    background:#0f172a;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:35px;
+    transition:.4s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    border-color:#38bdf8;
+    box-shadow:0 15px 35px rgba(56,189,248,.15);
+}
+
+.service-icon{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.service-card h3{
+    color:#fff;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.service-card p{
+    color:#94a3b8;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+    .services-section{
+        padding:70px 20px;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+.why-me-section{
+    padding:100px 8%;
+    background:#0f172a;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:60px;
+}
+
+.why-card{
+    background:#1e293b;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:35px;
+    transition:.4s;
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+    border-color:#38bdf8;
+    box-shadow:0 15px 35px rgba(56,189,248,.15);
+}
+
+.why-card h3{
+    color:#fff;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.why-card p{
+    color:#94a3b8;
+    line-height:1.8;
+}
+
+@media(max-width:991px){
+
+.why-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.why-grid{
+    grid-template-columns:1fr;
+}
+
+.why-me-section{
+    padding:70px 20px;
+}
+
+}
+
+.contact-section{
+    padding:120px 8%;
+    background:#020617;
+}
+
+.contact-wrapper{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:50px;
+    align-items:center;
+}
+
+.contact-tag{
+    display:inline-block;
+    background:#38bdf8;
+    color:#000;
+    font-weight:700;
+    padding:10px 18px;
+    border-radius:50px;
+    margin-bottom:20px;
+}
+
+.contact-left h2{
+    font-size:48px;
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.contact-left p{
+    color:#94a3b8;
+    line-height:1.9;
+}
+
+.contact-info{
+    margin-top:40px;
+}
+
+.info-item{
+    display:flex;
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.info-item span{
+    font-size:28px;
+}
+
+.info-item h4{
+    color:#fff;
+    margin-bottom:5px;
+}
+
+.contact-card{
+    background:#0f172a;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:25px;
+    padding:40px;
+}
+
+.contact-card h3{
+    color:#fff;
+    margin-bottom:25px;
+}
+
+.contact-card ul{
+    list-style:none;
+    padding:0;
+}
+
+.contact-card li{
+    color:#cbd5e1;
+    margin-bottom:15px;
+}
+
+.contact-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.primary-btn{
+    background:#38bdf8;
+    color:#000;
+    text-decoration:none;
+    padding:14px 25px;
+    border-radius:10px;
+    font-weight:700;
+}
+
+.secondary-btn{
+    border:1px solid #38bdf8;
+    color:#38bdf8;
+    text-decoration:none;
+    padding:14px 25px;
+    border-radius:10px;
+    font-weight:700;
+}
+
+@media(max-width:991px){
+
+.contact-wrapper{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-section{
+    padding:80px 20px;
+}
+
+.contact-left h2{
+    font-size:34px;
+}
+
+.contact-card{
+    padding:25px;
+}
+
+}
+
+.footer{
+    padding:30px;
+    text-align:center;
+    background:#0f172a;
+    color:#94a3b8;
+}
+
+
+@media (max-width:1024px){
+
+    .hero-container,
+    .about-content,
+    .contact-wrapper{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .skills-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .skill-card:last-child{
+        grid-column:auto;
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .image-wrapper img{
+        width:320px;
+        height:320px;
+        margin:auto;
+    }
+
+}
+
+.case-evidence{
+    margin-top:30px;
+}
+
+.case-evidence img{
+    width:100%;
+    border-radius:16px;
+    cursor:pointer;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.case-evidence img:hover{
+    transform:translateY(-5px);
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:768px){
+
+    .container{
+        width:92%;
+    }
+
+    .hero{
+        padding-top:120px;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .hero-buttons a{
+        width:100%;
+        text-align:center;
+    }
+
+    .hero-stats{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .about-content,
+    .contact-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .about-highlights{
+        grid-template-columns:1fr;
+    }
+
+    .skills-grid,
+    .projects-grid,
+    .achievement-grid,
+    .industries-grid,
+    .process-grid,
+    .tools-grid,
+    .services-grid,
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .skill-card:last-child{
+        grid-column:auto;
+    }
+
+    .case-gallery{
+        grid-template-columns:1fr;
+    }
+
+    .result-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .contact-buttons{
+        flex-direction:column;
+    }
+
+    .contact-buttons a{
+        width:100%;
+        text-align:center;
+    }
+
+    .image-wrapper img{
+        width:250px;
+        height:250px;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .contact-left h2{
+        font-size:32px;
+    }
+
+    .modal-box{
+        width:95%;
+        padding:20px;
+    }
+
+}
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width:480px){
+
+    .hero-content h1{
+        font-size:28px;
+    }
+
+    .hero-stats{
+        grid-template-columns:1fr;
+    }
+
+    .result-grid{
+        grid-template-columns:1fr;
+    }
+
+    .image-wrapper img{
+        width:220px;
+        height:220px;
+    }
+
+    .section-title h2{
+        font-size:26px;
+    }
+
+}
+
+/* ==========================
+   VISUAL IMPROVEMENTS
+========================== */
+
+.skill-card,
+.project-card,
+.timeline-content,
+.achievement-card,
+.industry-card,
+.process-card,
+.tool-card,
+.service-card,
+.why-card,
+.contact-card{
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+}
+
+.hero-content h1 span{
+    background:linear-gradient(90deg,#38bdf8,#818cf8);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.image-wrapper img{
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#38bdf8;
+    border-radius:10px;
+}
+
+
+.floating-contact{
+    position:fixed;
+    right:25px;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:99999;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.floating-btn{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:#fff;
+    font-size:26px;
+    transition:.3s;
+}
+
+/* Call Button */
+
+.call-btn{
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    box-shadow:
+    0 0 20px rgba(37,99,235,.6),
+    0 0 40px rgba(37,99,235,.4);
+}
+
+/* WhatsApp */
+
+.whatsapp-btn{
+    background:linear-gradient(135deg,#25D366,#1faa52);
+    box-shadow:
+    0 0 20px rgba(37,211,102,.6),
+    0 0 40px rgba(37,211,102,.4);
+}
+
+.floating-btn:hover{
+    transform:scale(1.15);
+}
+
+/* Pulse Animation */
+
+.call-btn::before,
+.whatsapp-btn::before{
+    content:'';
+    position:absolute;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    animation:pulseRing 2s infinite;
+}
+
+.call-btn::before{
+    border:2px solid #3b82f6;
+}
+
+.whatsapp-btn::before{
+    border:2px solid #25D366;
+}
+
+@keyframes pulseRing{
+
+    0%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(1.6);
+        opacity:0;
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.floating-contact{
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.floating-btn{
+    width:55px;
+    height:55px;
+    font-size:22px;
+}
+
+.call-btn::before,
+.whatsapp-btn::before{
+    width:55px;
+    height:55px;
+}
+
+}
+
+</style>
+<body>
+<header class="navbar">
+    <div class="container nav-container">
+
+        <div class="logo">
+            <h2>Sri Ram</h2>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav id="navbar-menu">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Case Studies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="#contact" class="btn-primary desktop-btn">
+            Hire Me
+        </a>
+
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container hero-container">
+
+
+        <div class="hero-image">
+
+            <div class="image-wrapper">
+                <img src="img/sri linkdin post.png" alt="Sri Ram SEO Specialist">
+            </div>
+
+        </div>
+
+        <div class="hero-content">
+
+            <span class="hero-badge">
+                SEO & CRO Specialist
+            </span>
+
+            <h1>
+                Helping Businesses Grow With
+                <span>SEO, CRO & PPC Specialist</span>
+            </h1>
+
+            <p>
+                2+ Years of experience delivering Technical SEO,
+                Local SEO, Regional SEO, International SEO,
+                CRO, Google Business Profile Optimization,
+                WordPress SEO and PPC campaigns.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">
+                    View Case Studies
+                </a>
+
+                <a href="resume.pdf" class="btn-secondary">
+                    Download Resume
+                </a>
+            </div>
+
+            <div class="hero-stats">
+
+                <div class="stat-box">
+                    <h3>15+</h3>
+                    <p>Clients Managed</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>25+</h3>
+                    <p>GBP Profiles</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>800K+</h3>
+                    <p>Search Impressions</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>2+</h3>
+                    <p>Years Experience</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- HERO -->
+<section id="about" class="about">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>About Me</span>
+            <h2>SEO Specialist Focused on Growth & Results</h2>
+        </div>
+
+        <div class="about-content">
+
+            <div class="about-text">
+
+                <p>
+                    I'm Sri Ram, an SEO & CRO Specialist with 2+ years
+                    of experience helping businesses improve search
+                    visibility, generate qualified leads, and increase
+                    conversions through data-driven SEO strategies.
+                </p>
+
+                <p>
+                    I have worked with UK and Indian clients across
+                    industries including security services, healthcare,
+                    education, construction, consultancy, hospitality,
+                    and professional services.
+                </p>
+
+                <p>
+                    My expertise includes Technical SEO, Local SEO,
+                    Regional SEO, International SEO, Conversion Rate
+                    Optimization (CRO), Google Business Profile
+                    optimization, WordPress SEO, and PPC campaigns.
+                </p>
+
+                <a href="#projects" class="btn-primary">
+                    View My Case Studies
+                </a>
+
+            </div>
+
+            <div class="about-highlights">
+
+                <div class="highlight-card">
+                    <h3>15+</h3>
+                    <p>SEO Projects Delivered</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>45+</h3>
+                    <p>Google Business Profiles Managed</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>800K+</h3>
+                    <p>Search Impressions Managed</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>2+</h3>
+                    <p>Years Experience</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="floating-contact">
+
+    <a href="tel:+916380160264" class="floating-btn call-btn">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <a href="https://wa.me/916380160264" target="_blank" class="floating-btn whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</div>
+
+<section id="skills" class="skills">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>My Expertise</span>
+            <h2>Skills & Specializations</h2>
+            <p>
+                Delivering SEO, CRO and Digital Marketing strategies
+                that improve rankings, traffic and conversions.
+            </p>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>Technical SEO</h3>
+                <p>Core Web Vitals, Indexing, Crawlability, Schema, Sitemap Optimization.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Local SEO</h3>
+                <p>Google Business Profile, Local Rankings, Citations and Maps Visibility.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Regional SEO</h3>
+                <p>Location Pages, Town Pages, County Pages and Regional Expansion.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>International SEO</h3>
+                <p>Country Targeting, National SEO Strategies and Global Search Visibility.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Conversion Rate Optimization</h3>
+                <p>Landing Pages, CTA Placement, UX Improvements and Lead Generation.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Semantic SEO</h3>
+                <p>Entity Optimization, Topic Clusters, FAQ Implementation and GEO.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Google Ads</h3>
+                <p>Lead Generation Campaigns, Search Ads and Conversion Tracking.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>WordPress SEO</h3>
+                <p>On-Page Optimization, Speed Optimization and Website Management.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Off-Page SEO & Link Building</h3>
+                <p>
+                    Guest Posting, Broken Link Building,
+                    Digital PR, Outreach Campaigns,
+                    Citation Building, Niche Edits,
+                    Toxic Backlink Cleanup, Disavow
+                    Management and Authority Growth
+                    Strategies.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="experience" class="experience">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>My Journey</span>
+            <h2>Professional Experience</h2>
+            <p>
+                Building SEO, CRO and Digital Marketing strategies
+                across UK and Indian businesses.
+            </p>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        Sep 2025 - June 2026
+                    </span>
+
+                    <h3>SEO Expert</h3>
+
+                    <h4>Marketing House of Zachariah Pvt Ltd</h4>
+
+                    <ul>
+                        <li>Managed 25+ UK client accounts.</li>
+                        <li>Technical SEO, Local SEO, Regional SEO and International SEO.</li>
+                        <li>Google Business Profile optimization.</li>
+                        <li>Core Web Vitals improvements.</li>
+                        <li>CRO implementation and conversion tracking.</li>
+                        <li>Guest Posting, Digital PR and Link Building.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        Dec 2024 - Sep 2025
+                    </span>
+
+                    <h3>Digital Marketing Executive</h3>
+
+                    <h4>Thirumala Roofing & Structurals</h4>
+
+                    <ul>
+                        <li>Managed SEO campaigns.</li>
+                        <li>Google Ads and Meta Ads.</li>
+                        <li>WordPress Website Management.</li>
+                        <li>Social Media Marketing.</li>
+                        <li>Lead Generation Campaigns.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        Jul 2024 - Oct 2024
+                    </span>
+
+                    <h3>SEO Executive - Paid Intern</h3>
+
+                    <h4>G2G Technology</h4>
+
+                    <ul>
+                        <li>On-Page SEO.</li>
+                        <li>Off-Page SEO.</li>
+                        <li>Technical SEO.</li>
+                        <li>HTML, CSS and JavaScript Development.</li>
+                        <li>Website Optimization Projects.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="projects" class="projects">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>Portfolio</span>
+            <h2>SEO Case Studies</h2>
+            <p>
+                Explore real-world SEO, CRO and Digital Marketing projects.
+            </p>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="img/ChatGPT Image Jun 17, 2026, 05_33_13 PM.png" alt="">
+                <div class="project-content">
+                    <h3>UK Security Service project</h3>
+                    <p>Regional SEO Project</p>
+                    <button class="view-btn" data-project="security">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="img/seo.png" alt="">
+                <div class="project-content">
+                    <h3>Midland Marketing</h3>
+                    <p>SEO Growth Project</p>
+                    <button class="view-btn" data-project="midland">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="img/seo and cro.png" alt="">
+                <div class="project-content">
+                    <h3>SEND School project</h3>
+                    <p>SEO & CRO Project</p>
+                    <button class="view-btn" data-project="kingsley">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="img/ChatGPT Image Jun 17, 2026, 05_33_13 PM.png" alt="">
+                <div class="project-content">
+                    <h3>Auction House project</h3>
+                    <p>Regional SEO Project</p>
+                    <button class="view-btn" data-project="henry">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="img/seo and cro.png">
+                <div class="project-content">
+                    <h3>Skin Clinic Project</h3>
+                    <p>SEO & CRO Project</p>
+                    <button class="view-btn" data-project="skin">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/international.png">
+                <div class="project-content">
+                    <h3>Consultant Project</h3>
+                    <p>International SEO Project</p>
+                    <button class="view-btn" data-project="iso">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="img/seo and ads.png" alt="">
+                <div class="project-content">
+                    <h3>Thirumala Roofings & Structurals</h3>
+                    <p> SEO | Google Ads | Local SEO | WordPress Development</p>
+                    <button class="view-btn" data-project="thirumala">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+             <div class="project-card">
+                <img src="img/Local SEO  Website Redesign  On-Page SEO.png" alt="">
+                <div class="project-content">
+                    <h3>Taxi Services project</h3>
+                    <p>Local SEO | Website Redesign | On-Page SEO</p>
+                    <button class="view-btn" data-project="tirupurtaxi">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="img/WordPress Development  Local SEO  GMB Optimization.png" alt="">
+                <div class="project-content">
+                    <h3>Tours & Travels</h3>
+                    <p>WordPress Development | Local SEO | GMB Optimization</p>
+                    <button class="view-btn" data-project="natours">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="modal" id="caseModal">
+
+    <div class="modal-overlay"></div>
+
+    <div class="modal-box">
+
+        <button class="close-modal">
+            ✕
+        </button>
+
+        <div id="modalContent"></div>
+
+    </div>
+
+</div>
+
+
+
+<section class="achievements-section" id="achievements">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>MY ACHIEVEMENTS</span>
+            <h2>SEO Results & Career Highlights</h2>
+            <p>
+                Delivering measurable SEO growth through Technical SEO, Local SEO,
+                Regional SEO, International SEO, CRO, and Authority Building strategies.
+            </p>
+        </div>
+
+        <div class="achievement-grid">
+
+            <div class="achievement-card">
+                <h3>15+</h3>
+                <p>Clients Managed Across Multiple Industries</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>25</h3>
+                <p>Google Business Profiles Managed & Optimized</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>90+</h3>
+                <p>Location & Service Pages Planned and Optimized</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>36 → 41</h3>
+                <p>Domain Rating Growth - Region Security Guarding</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>35 → 52</h3>
+                <p>Domain Rating Growth - Midland Marketing</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>49 → 296</h3>
+                <p>Referring Domains Growth Through Link Building</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>1.7M+</h3>
+                <p>Total Search Impressions Managed Across Projects</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>874K+</h3>
+                <p>Search Impressions Managed For Security Industry Client</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>804K+</h3>
+                <p>Agency Website Search Impressions Generated</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>68.7K+</h3>
+                <p>Construction Industry Organic Search Impressions</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>#1</h3>
+                <p>Ranked Multiple Local, Regional & National Keywords</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>AI</h3>
+                <p>Featured In Google AI Overview Results</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>SEO + CRO</h3>
+                <p>Delivered Ranking & Lead Generation Improvements</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>UK SEO</h3>
+                <p>Managed Regional, Local & International SEO Campaigns</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>2+</h3>
+                <p>Years Of SEO & Digital Marketing Experience</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="industries-section" id="industries">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>INDUSTRIES</span>
+            <h2>Industries I've Worked With</h2>
+            <p>
+                Experience delivering SEO, CRO, Local SEO, Technical SEO and
+                Digital Marketing solutions across diverse industries.
+            </p>
+        </div>
+
+        <div class="industries-grid">
+
+            <div class="industry-card">
+                <span>🛡️</span>
+                <h3>Security Services</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🏠</span>
+                <h3>Property Auctions</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🎓</span>
+                <h3>Education</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>💄</span>
+                <h3>Skin Clinics</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>📋</span>
+                <h3>ISO Consultancy</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🏗️</span>
+                <h3>Construction</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🏭</span>
+                <h3>PEB & Roofing</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🚕</span>
+                <h3>Taxi Services</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>✈️</span>
+                <h3>Travel & Tourism</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>📐</span>
+                <h3>Surveyors</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🍽️</span>
+                <h3>Restaurants</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🍸</span>
+                <h3>Bars & Hospitality</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🏥</span>
+                <h3>Healthcare</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>💪</span>
+                <h3>Fitness</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🏗️</span>
+                <h3>Scaffolding</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🔧</span>
+                <h3>Plumbing</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>🏡</span>
+                <h3>Interior Design</h3>
+            </div>
+
+            <div class="industry-card">
+                <span>📊</span>
+                <h3>Chartered Accountants</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="process-section" id="process">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>MY SEO FRAMEWORK</span>
+            <h2>My SEO & CRO Process</h2>
+            <p>
+                A proven process used across Local SEO, Regional SEO,
+                International SEO and CRO projects to improve rankings,
+                traffic and conversions.
+            </p>
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+                <div class="step-number">01</div>
+                <h3>SEO Audit</h3>
+                <p>
+                    Technical analysis, crawl issues, indexing problems,
+                    Core Web Vitals and SEO opportunities.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="step-number">02</div>
+                <h3>Keyword Research</h3>
+                <p>
+                    Identify high-intent keywords, search demand,
+                    keyword clusters and user intent.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="step-number">03</div>
+                <h3>Competitor Analysis</h3>
+                <p>
+                    Analyze competitors, content gaps,
+                    backlink opportunities and ranking strategies.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="step-number">04</div>
+                <h3>Site Architecture</h3>
+                <p>
+                    Build SEO-friendly structures,
+                    service pages, location pages and content hierarchy.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="step-number">05</div>
+                <h3>On-Page SEO</h3>
+                <p>
+                    Optimize titles, metadata, headings,
+                    internal links, schema and content.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="step-number">06</div>
+                <h3>Technical SEO</h3>
+                <p>
+                    Improve crawlability, indexing,
+                    page speed, Core Web Vitals and site health.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="step-number">07</div>
+                <h3>Content Strategy</h3>
+                <p>
+                    Build topical authority through
+                    semantic SEO, content clusters and blogs.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="step-number">08</div>
+                <h3>Authority Building</h3>
+                <p>
+                    Guest posting, digital PR,
+                    outreach campaigns and quality backlinks.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="step-number">09</div>
+                <h3>CRO Optimization</h3>
+                <p>
+                    Improve conversions through CTAs,
+                    landing pages, forms and user journeys.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="step-number">10</div>
+                <h3>Reporting & Growth</h3>
+                <p>
+                    Track rankings, traffic,
+                    conversions and continuously improve performance.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="tools-section" id="tools">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>TOOLS & PLATFORMS</span>
+            <h2>Tools I Use Daily</h2>
+            <p>SEO, Analytics, CRO, PPC & Web Development Tools</p>
+        </div>
+
+        <div class="tools-list">
+
+            <span class="tool-pill">Google Search Console</span>
+            <span class="tool-pill">Google Analytics 4</span>
+            <span class="tool-pill">Google Tag Manager</span>
+            <span class="tool-pill">GTmetrics</span>
+            <span class="tool-pill">Google Rich Result Test</span>
+            <span class="tool-pill">Looker Studio</span>
+            <span class="tool-pill">Ahrefs</span>
+            <span class="tool-pill">SEMrush</span>
+            <span class="tool-pill">SE Ranking</span>
+            <span class="tool-pill">Moz</span>
+            <span class="tool-pill">Screaming Frog</span>
+            <span class="tool-pill">ChatGPT</span>
+            <span class="tool-pill">Claude</span>
+            <span class="tool-pill">WordPress</span>
+            <span class="tool-pill">Rank Math</span>
+            <span class="tool-pill">Google Ads</span>
+            <span class="tool-pill">Ads Manager</span>
+            <span class="tool-pill">Meta Business suite</span>
+            <span class="tool-pill">Canva</span>
+            <span class="tool-pill">CapCut</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="services-section" id="services">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>SERVICES</span>
+            <h2>What I Specialize In</h2>
+            <p>
+                Delivering SEO, CRO, Local SEO, Technical SEO and
+                Digital Marketing solutions that drive rankings,
+                traffic and business growth.
+            </p>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <h3>SEO Strategy</h3>
+                <p>
+                    Custom SEO roadmaps aligned with business goals,
+                    search demand and competitor opportunities.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">⚙️</div>
+                <h3>Technical SEO</h3>
+                <p>
+                    Crawlability, indexing, Core Web Vitals,
+                    site architecture and technical improvements.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📍</div>
+                <h3>Local SEO</h3>
+                <p>
+                    Google Business Profile optimization,
+                    local rankings and map visibility growth.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🌎</div>
+                <h3>International SEO</h3>
+                <p>
+                    Country targeting, search intent optimization
+                    and national search visibility improvements.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📈</div>
+                <h3>CRO Optimization</h3>
+                <p>
+                    Improve conversions through landing pages,
+                    CTAs, forms and user journey enhancements.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔗</div>
+                <h3>Link Building</h3>
+                <p>
+                    Guest posting, outreach campaigns,
+                    digital PR and authority-building strategies.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <h3>WordPress Development</h3>
+                <p>
+                    SEO-friendly websites built with performance,
+                    UX and conversions in mind.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Analytics & Tracking</h3>
+                <p>
+                    GA4, GTM and Search Console setup
+                    for accurate performance tracking.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💰</div>
+                <h3>Google Ads</h3>
+                <p>
+                    Search campaign setup, optimization,
+                    lead generation and conversion tracking.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="why-me-section" id="why-me">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>WHY HIRE ME</span>
+            <h2>What Makes Me Different</h2>
+            <p>
+                Combining SEO, CRO, Technical SEO, Local SEO,
+                PPC and Website Development to deliver measurable business growth.
+            </p>
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <h3>📈 Results Driven SEO</h3>
+                <p>
+                    Focused on rankings, traffic growth,
+                    lead generation and business outcomes.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <h3>🌍 UK Market Experience</h3>
+                <p>
+                    Managed Local SEO, Regional SEO and
+                    International SEO campaigns for UK businesses.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <h3>⚙️ Technical SEO Expertise</h3>
+                <p>
+                    Experienced in indexing, crawlability,
+                    Core Web Vitals, schema and site architecture.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <h3>🎯 CRO Focused</h3>
+                <p>
+                    Improve user journeys, CTA placement,
+                    conversion tracking and lead generation.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <h3>🔗 Authority Building</h3>
+                <p>
+                    Guest posting, outreach campaigns,
+                    Digital PR and backlink strategies.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <h3>💻 Technical + Marketing</h3>
+                <p>
+                    Able to work with WordPress, HTML, CSS,
+                    JavaScript, SEO and PPC together.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="contact-wrapper">
+
+            <div class="contact-left">
+
+                <span class="contact-tag">
+                    AVAILABLE FOR OPPORTUNITIES
+                </span>
+
+                <h2>
+                    Let's Work Together
+                </h2>
+
+                <p>
+                    I'm an SEO & CRO Specialist with experience in
+                    Technical SEO, Local SEO, Regional SEO,
+                    International SEO, Link Building,
+                    Google Ads and WordPress Development.
+
+                    Currently seeking SEO Specialist,
+                    SEO Executive and Digital Marketing opportunities.
+                </p>
+
+                <div class="contact-info">
+
+                    <div class="info-item">
+                        <span>📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>sriram.sgc994@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span>📍</span>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Chennai, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span>💼</span>
+                        <div>
+                            <h4>Experience</h4>
+                            <p>2+ Years in SEO & Digital Marketing</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="contact-right">
+
+                <div class="contact-card">
+
+                    <h3>Quick Profile</h3>
+
+                    <ul>
+
+                        <li>✓ Technical SEO Specialist</li>
+
+                        <li>✓ Local & Regional SEO Expert</li>
+
+                        <li>✓ International SEO Experience</li>
+
+                        <li>✓ CRO & Lead Generation</li>
+
+                        <li>✓ Google Ads & Meta Ads</li>
+
+                        <li>✓ WordPress Development</li>
+
+                        <li>✓ Google Analytics 4 & GTM</li>
+
+                        <li>✓ Link Building & Outreach</li>
+
+                    </ul>
+
+                    <div class="contact-buttons">
+
+                        <a href="resume.pdf"
+                           target="_blank"
+                           class="primary-btn">
+
+                            Download Resume
+
+                        </a>
+
+                        <a href="https://linkedin.com"
+                           target="_blank"
+                           class="secondary-btn">
+
+                            LinkedIn Profile
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <p>
+        © 2026 Sriram | SEO & CRO Specialist
+    </p>
+
+</footer>
+
+
+
+
+<script>
+
+const menuToggle = document.getElementById("menu-toggle");
+const navbarMenu = document.getElementById("navbar-menu");
+
+menuToggle.addEventListener("click", () => {
+    navbarMenu.classList.toggle("active");
+});
+
+/* Close menu after click */
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navbarMenu.classList.remove("active");
+    });
+});
+const projectData = {
+
+security: {
+
+title: "Region Security Guarding",
+
+content: `
+
+<div class="case-study-header">
+
+<span class="case-tag">
+Regional SEO | Local SEO | Technical SEO | CRO
+</span>
+
+<h2>
+Region Security Guarding
+</h2>
+
+<p>
+A UK-based security services provider operating across multiple locations. The objective was to strengthen regional search visibility, improve local rankings, increase Google Business Profile performance, and generate more qualified enquiries through SEO and CRO initiatives.
+</p>
+
+</div>
+
+<div class="result-grid">
+
+<div class="result-box">
+<h3>36 → 41</h3>
+<p>Domain Rating Growth</p>
+</div>
+
+<div class="result-box">
+<h3>874K+</h3>
+<p>Search Impressions</p>
+</div>
+
+<div class="result-box">
+<h3>25</h3>
+<p>GBP Profiles Managed</p>
+</div>
+
+<div class="result-box">
+<h3>Page 1</h3>
+<p>Regional Rankings</p>
+</div>
+
+</div>
+
+<h3>Project Overview</h3>
+
+<p>
+Managed Technical SEO, Local SEO, Regional SEO and Conversion Rate Optimization initiatives for a large UK security services website. The campaign focused on improving search visibility across multiple service locations, enhancing local presence, and increasing enquiry opportunities.
+</p>
+
+<h3>Challenges Identified</h3>
+
+<ul>
+
+<li>Large number of toxic backlinks affecting link profile quality.</li>
+
+<li>Duplicate URLs and indexing inefficiencies impacting crawl budget.</li>
+
+<li>Weak visibility across key regional service locations.</li>
+
+<li>Underutilized Google Business Profiles.</li>
+
+<li>Technical SEO issues affecting website performance and user experience.</li>
+
+<li>Lack of semantic content structure and location relevance.</li>
+
+</ul>
+
+<h3>Technical SEO Strategy</h3>
+
+<ul>
+
+<li>Conducted a comprehensive technical SEO audit.</li>
+
+<li>Resolved duplicate page and indexing issues.</li>
+
+<li>Improved crawlability and site architecture.</li>
+
+<li>Optimized Core Web Vitals performance.</li>
+
+<li>Enhanced sitemap structure and internal linking.</li>
+
+<li>Implemented schema markup across key pages.</li>
+
+<li>Improved website quality through index management and cleanup.</li>
+
+</ul>
+
+<h3>On-Page SEO Implementation</h3>
+
+<ul>
+
+<li>Optimized service pages and location landing pages.</li>
+
+<li>Implemented FAQ sections and breadcrumb navigation.</li>
+
+<li>Improved title tags, meta descriptions and content hierarchy.</li>
+
+<li>Applied semantic SEO principles and entity optimization.</li>
+
+<li>Developed location-focused content to improve relevance.</li>
+
+<li>Optimized blogs and supporting content for regional visibility.</li>
+
+</ul>
+
+<h3>Local SEO & Google Business Profile</h3>
+
+<ul>
+
+<li>Managed and optimized 25 Google Business Profiles.</li>
+
+<li>Created and optimized additional location profiles.</li>
+
+<li>Published weekly GBP posts.</li>
+
+<li>Improved local map visibility across target service areas.</li>
+
+<li>Enhanced local engagement and enquiry generation.</li>
+
+</ul>
+
+<h3>Authority Building & Off-Page SEO</h3>
+
+<ul>
+
+<li>Conducted backlink audits and toxic backlink removal.</li>
+
+<li>Implemented disavow strategies to improve link profile quality.</li>
+
+<li>Built relevant authority backlinks.</li>
+
+<li>Developed Tier 1 and Tier 2 backlink strategies.</li>
+
+<li>Strengthened domain authority through quality link acquisition.</li>
+
+</ul>
+
+<h3>Semantic SEO & GEO</h3>
+
+<ul>
+
+<li>Implemented semantic keyword clustering.</li>
+
+<li>Optimized entity relationships and topical relevance.</li>
+
+<li>Enhanced content hierarchy and internal linking.</li>
+
+<li>Optimized content for AI-powered search experiences.</li>
+
+<li>Implemented Generative Engine Optimization (GEO) strategies.</li>
+
+</ul>
+
+<h3>Key Results</h3>
+
+<ul>
+
+<li>Increased Domain Rating from 36 to 41.</li>
+
+<li>Managed SEO performance for a website generating 874K+ search impressions.</li>
+
+<li>Achieved first-page rankings for multiple regional and location-based keywords.</li>
+
+<li>Improved Google Maps visibility across 25 service locations.</li>
+
+<li>Enhanced website quality through technical SEO optimization and index management.</li>
+
+<li>Improved local search presence and enquiry generation.</li>
+
+</ul>
+
+<h3>Tools Used</h3>
+
+<div class="tools-used">
+
+<span>Google Search Console</span>
+
+<span>Google Analytics 4</span>
+
+<span>Ahrefs</span>
+
+<span>Google Business Profile</span>
+
+<span>Screaming Frog</span>
+
+<span>PageSpeed Insights</span>
+
+<span>WordPress</span>
+
+</div>
+
+<div class="case-evidence">
+
+<img src="img/rsg1.jpeg" alt="DR Growth">
+
+<img src="img/rsg2.jpeg" alt="GSC Performance">
+
+<img src="img/rsg3.jpeg" alt="Core Web Vitals">
+
+<img src="img/rsg4.png" alt="GBP Results">
+<img src="img/rsg5.jpeg" alt="GBP Results">
+
+</div>
+
+`
+
+},
+
+midland:{
+
+title:"Midland Marketing",
+
+content:`
+
+<div class="project-hero">
+
+    <span class="project-tag">
+        SEO Growth Project
+    </span>
+
+    <h1>Midland Marketing</h1>
+
+    <p>
+        Led SEO growth initiatives for the agency website, focusing on
+        technical SEO, authority building, semantic SEO, content optimization,
+        and organic visibility improvements.
+    </p>
+
+</div>
+
+<div class="result-grid">
+
+    <div class="result-box">
+        <h3>35 → 52</h3>
+        <p>Domain Rating Growth</p>
+    </div>
+
+    <div class="result-box">
+        <h3>49 → 296</h3>
+        <p>Referring Domains</p>
+    </div>
+
+    <div class="result-box">
+        <h3>804K+</h3>
+        <p>Search Impressions</p>
+    </div>
+
+    <div class="result-box">
+        <h3>1.8K+</h3>
+        <p>Organic Clicks</p>
+    </div>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Overview</h2>
+
+    <p>
+        Midland Marketing required a long-term SEO growth strategy to improve
+        domain authority, strengthen organic visibility, increase search
+        impressions, and generate more qualified leads through organic search.
+        The project focused on technical SEO, content optimization,
+        authority building, and semantic SEO implementation.
+    </p>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Challenges Identified</h2>
+
+    <ul>
+        <li>Toxic backlinks impacting backlink quality.</li>
+        <li>Limited referring domains and authority signals.</li>
+        <li>Duplicate URLs and indexing inefficiencies.</li>
+        <li>Weak internal linking between service pages and blogs.</li>
+        <li>Low-value pages affecting overall website quality.</li>
+        <li>Missed opportunities in semantic SEO and AI search visibility.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Authority Building Strategy</h2>
+
+    <ul>
+        <li>Conducted backlink audits and toxic backlink cleanup.</li>
+        <li>Implemented disavow strategies for unhealthy links.</li>
+        <li>Executed guest posting campaigns.</li>
+        <li>Built niche-relevant backlinks through outreach.</li>
+        <li>Implemented Digital PR campaigns.</li>
+        <li>Conducted broken link building campaigns.</li>
+        <li>Expanded citation profile and authority signals.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Technical SEO Improvements</h2>
+
+    <ul>
+        <li>Performed comprehensive technical SEO audits.</li>
+        <li>Resolved duplicate URL issues.</li>
+        <li>Optimized XML sitemap structure.</li>
+        <li>Improved crawlability and crawl efficiency.</li>
+        <li>Implemented 301 redirects for obsolete pages.</li>
+        <li>Removed low-value and non-performing URLs.</li>
+        <li>Improved overall site quality and index management.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Semantic SEO & Content Optimization</h2>
+
+    <ul>
+        <li>Implemented semantic SEO frameworks.</li>
+        <li>Developed topic clusters and content hierarchy.</li>
+        <li>Optimized FAQs and structured content sections.</li>
+        <li>Implemented schema markup opportunities.</li>
+        <li>Enhanced breadcrumb navigation.</li>
+        <li>Strengthened internal linking between blogs and service pages.</li>
+        <li>Optimized content for GEO and AI-powered search experiences.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Key Results Achieved</h2>
+
+    <ul>
+        <li>Increased Domain Rating from 35 to 52.</li>
+        <li>Increased Referring Domains from 49 to 296.</li>
+        <li>Supported website growth to 804K+ search impressions.</li>
+        <li>Generated 1.8K+ organic clicks.</li>
+        <li>Improved keyword visibility and topical authority.</li>
+        <li>Enhanced lead-generation opportunities through SEO growth.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Evidence</h2>
+
+    <div class="case-evidence">
+
+        <img src="img/midl.png" alt="DR Before">
+
+        <img src="img/midl2.png" alt="DR After">
+
+        <img src="img/midl3.jpeg" alt="Search Console Growth">
+
+    </div>
+
+</div>
+
+`
+},
+
+kingsley:{
+
+title:"Kingsley Academy",
+
+content:`
+
+<div class="project-hero">
+
+    <span class="project-tag">
+        SEO & CRO Project
+    </span>
+
+    <h1>Kingsley Academy</h1>
+
+    <p>
+        Planned, structured and launched an SEO-driven and conversion-focused
+        educational website designed to improve search visibility, user experience,
+        and enquiry generation through a combination of SEO, CRO and analytics implementation.
+    </p>
+
+</div>
+
+<div class="result-grid">
+
+    <div class="result-box">
+        <h3>#2</h3>
+        <p>SEND School Admissions Wolverhampton</p>
+    </div>
+
+    <div class="result-box">
+        <h3>#3</h3>
+        <p>SEND Schools Wolverhampton</p>
+    </div>
+
+    <div class="result-box">
+        <h3>Page 1</h3>
+        <p>Target Educational Keywords</p>
+    </div>
+
+    <div class="result-box">
+        <h3>GA4</h3>
+        <p>Conversion Tracking Setup</p>
+    </div>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Overview</h2>
+
+    <p>
+        Kingsley Academy required a modern website that could support both organic
+        growth and enquiry generation. The project involved creating an SEO-focused
+        website structure, improving user journeys, implementing conversion tracking,
+        and building a scalable content framework aligned with educational search intent.
+    </p>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Research & Planning</h2>
+
+    <ul>
+        <li>Conducted in-depth market research and competitor analysis.</li>
+        <li>Performed keyword research to identify high-intent search opportunities.</li>
+        <li>Mapped search intent across educational services.</li>
+        <li>Created a structured content strategy and page hierarchy.</li>
+        <li>Planned an SEO-focused website architecture for future scalability.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>SEO Website Architecture</h2>
+
+    <ul>
+        <li>Developed SEO-driven site architecture and navigation.</li>
+        <li>Structured landing pages around target keywords.</li>
+        <li>Created keyword-focused content frameworks.</li>
+        <li>Implemented logical internal linking strategies.</li>
+        <li>Improved crawlability and content discoverability.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>On-Page SEO Implementation</h2>
+
+    <ul>
+        <li>Optimized metadata across key landing pages.</li>
+        <li>Implemented SEO-friendly heading structures.</li>
+        <li>Improved content quality and keyword targeting.</li>
+        <li>Implemented FAQ sections for additional keyword coverage.</li>
+        <li>Added structured schema markup.</li>
+        <li>Enhanced content relevance through semantic SEO techniques.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Conversion Rate Optimization (CRO)</h2>
+
+    <ul>
+        <li>Designed conversion-focused user journeys.</li>
+        <li>Optimized CTA placements across key pages.</li>
+        <li>Implemented lead capture forms.</li>
+        <li>Improved landing page structures for enquiries.</li>
+        <li>Enhanced user experience and engagement flow.</li>
+        <li>Reduced friction within the enquiry process.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Analytics & Tracking Setup</h2>
+
+    <ul>
+        <li>Configured Google Tag Manager (GTM).</li>
+        <li>Implemented Google Analytics 4 (GA4).</li>
+        <li>Configured Google Search Console (GSC).</li>
+        <li>Established conversion tracking for enquiries.</li>
+        <li>Created performance measurement frameworks.</li>
+        <li>Monitored rankings, engagement and conversions.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Technical SEO Improvements</h2>
+
+    <ul>
+        <li>Resolved crawlability and indexing issues.</li>
+        <li>Improved website performance and page speed.</li>
+        <li>Enhanced mobile usability.</li>
+        <li>Optimized website structure for search engines.</li>
+        <li>Improved Core Web Vitals performance.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Key Results Achieved</h2>
+
+    <ul>
+        <li>Successfully launched an SEO and conversion-optimized website.</li>
+        <li>Achieved Position #2 for "SEND School Admissions Wolverhampton".</li>
+        <li>Achieved Position #3 for "SEND Schools Wolverhampton".</li>
+        <li>Secured first-page rankings for key educational service keywords.</li>
+        <li>Improved conversion performance through CRO enhancements.</li>
+        <li>Established accurate tracking using GA4, GTM and Google Search Console.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Keyword Ranking Highlights</h2>
+
+    <table class="keyword-table">
+
+        <tr>
+            <th>Keyword</th>
+            <th>Position</th>
+        </tr>
+
+        <tr>
+            <td>SEND School Admissions Wolverhampton</td>
+            <td>#2</td>
+        </tr>
+
+        <tr>
+            <td>SEND Schools Wolverhampton</td>
+            <td>#3</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Evidence</h2>
+
+    <div class="case-evidence">
+
+        <img src="img/king1.jpeg" alt="">
+        <img src="img/kin1.png" alt="">
+        <img src="img/kin2.png" alt="">
+
+    </div>
+
+</div>
+
+`
+},
+henry:{
+
+title:"Henry Sykes Auctioneers",
+
+content:`
+
+<div class="project-hero">
+
+    <span class="project-tag">
+        Regional SEO Project
+    </span>
+
+    <h1>Henry Sykes Auctioneers</h1>
+
+    <p>
+        Planned and executed a large-scale Regional SEO campaign targeting
+        North West England to increase visibility for property auction services,
+        expand geographic keyword coverage, and generate qualified seller enquiries.
+        The project focused on site architecture, location page expansion,
+        semantic SEO, content strategy, and technical SEO implementation.
+    </p>
+
+</div>
+
+<div class="result-grid">
+
+    <div class="result-box">
+        <h3>90+</h3>
+        <p>SEO Pages Built</p>
+    </div>
+
+    <div class="result-box">
+        <h3>#1</h3>
+        <p>Regional Rankings</p>
+    </div>
+
+    <div class="result-box">
+        <h3>AI</h3>
+        <p>Overview Citations</p>
+    </div>
+
+    <div class="result-box">
+        <h3>North West</h3>
+        <p>Regional Coverage</p>
+    </div>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Overview</h2>
+
+    <p>
+        Henry Sykes required a scalable regional SEO framework capable of targeting
+        multiple locations across North West England. The objective was to improve
+        organic visibility for property auction services while building authority
+        across counties, cities, towns, and service-specific search queries.
+    </p>
+
+</div>
+
+<div class="content-card">
+
+    <h2>SEO Research & Planning</h2>
+
+    <ul>
+        <li>Conducted extensive keyword research and search intent analysis.</li>
+        <li>Performed regional competitor analysis.</li>
+        <li>Identified high-value county, city and town opportunities.</li>
+        <li>Mapped location-specific search demand.</li>
+        <li>Built a scalable SEO growth framework.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Website Architecture Strategy</h2>
+
+    <ul>
+        <li>Developed regional landing pages.</li>
+        <li>Built county-specific SEO pages.</li>
+        <li>Created city-focused service pages.</li>
+        <li>Implemented town-level location pages.</li>
+        <li>Created SEO-focused URL structures.</li>
+        <li>Designed scalable content frameworks.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Content & On-Page SEO</h2>
+
+    <ul>
+        <li>Launched 90+ SEO-optimized pages.</li>
+        <li>Optimized metadata and heading structures.</li>
+        <li>Implemented semantic SEO frameworks.</li>
+        <li>Added FAQ content for search intent coverage.</li>
+        <li>Strengthened internal linking architecture.</li>
+        <li>Improved topical authority through content expansion.</li>
+        <li>Implemented schema opportunities across key pages.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Technical SEO Implementation</h2>
+
+    <ul>
+        <li>Optimized URL structures and page hierarchy.</li>
+        <li>Implemented SEO recommendations within the backend.</li>
+        <li>Improved crawlability and indexation.</li>
+        <li>Enhanced internal linking pathways.</li>
+        <li>Improved website structure for scalability.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Keyword Ranking Highlights</h2>
+
+    <table class="keyword-table">
+
+        <thead>
+
+            <tr>
+                <th>Keyword</th>
+                <th>Position</th>
+                <th>Status</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Sell Property at Auction in North West England</td>
+                <td>#1</td>
+                <td>🏆 Ranking</td>
+            </tr>
+
+            <tr>
+                <td>Problem Property Auction St Helens</td>
+                <td>#1</td>
+                <td>🏆 Ranking</td>
+            </tr>
+
+            <tr>
+                <td>Sell Leasehold Property Auction Liverpool</td>
+                <td>#1</td>
+                <td>🏆 Ranking</td>
+            </tr>
+
+            <tr>
+                <td>Sell Rental Property at Auction Liverpool</td>
+                <td>#2</td>
+                <td>🚀 Ranking</td>
+            </tr>
+
+            <tr>
+                <td>Bespoke Property Auction House</td>
+                <td>#9</td>
+                <td>📈 Growth</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<div class="content-card">
+
+    <h2>AI Overview Visibility</h2>
+
+    <div class="ai-box">
+
+        <h4>Featured in Google AI Overviews</h4>
+
+        <ul>
+            <li>Sell Rental Property at Auction Liverpool</li>
+            <li>Sell Leasehold Property Auction Liverpool</li>
+        </ul>
+
+        <p>
+            Henry Sykes was cited as a source within Google's AI-generated
+            answers, improving visibility beyond traditional organic rankings.
+        </p>
+
+    </div>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Key Results Achieved</h2>
+
+    <ul>
+        <li>Successfully launched a Regional SEO framework targeting North West England.</li>
+        <li>Built and optimized 90+ service and location-focused pages.</li>
+        <li>Achieved multiple Position #1 rankings.</li>
+        <li>Expanded keyword coverage across counties, cities, towns and services.</li>
+        <li>Improved crawlability and website structure.</li>
+        <li>Enhanced internal linking and topical authority.</li>
+        <li>Achieved visibility within Google AI Overviews.</li>
+        <li>Strengthened long-term organic growth opportunities.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Evidence</h2>
+
+    <div class="case-evidence">
+
+        <img src="img/henry.png" alt="">
+        <img src="img/henry2.png" alt="">
+        <img src="img/henry3.png" alt="">
+
+    </div>
+
+</div>
+
+`
+},
+
+skin:{
+
+title:"Skin Revision Clinic",
+
+content:`
+
+<div class="project-hero">
+
+    <span class="project-tag">
+        SEO & CRO Optimization Project
+    </span>
+
+    <h1>Skin Revision Clinic</h1>
+
+    <p>
+        Delivered a comprehensive SEO and Conversion Rate Optimization (CRO)
+        strategy for a UK skin clinic focused on improving local search visibility,
+        increasing organic traffic, and generating more qualified treatment enquiries
+        through search engine optimization, local SEO, and conversion-focused website improvements.
+    </p>
+
+</div>
+
+<div class="result-grid">
+
+    <div class="result-box">
+        <h3>7+</h3>
+        <p>Page 1 Keywords</p>
+    </div>
+
+    <div class="result-box">
+        <h3>Local SEO</h3>
+        <p>Location Growth</p>
+    </div>
+
+    <div class="result-box">
+        <h3>CRO</h3>
+        <p>Lead Generation</p>
+    </div>
+
+    <div class="result-box">
+        <h3>GBP</h3>
+        <p>Maps Visibility</p>
+    </div>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Overview</h2>
+
+    <p>
+        Skin Revision is a UK-based skin clinic offering advanced aesthetic and skin treatments.
+        The website was generating traffic but struggled with local visibility, keyword rankings,
+        and lead generation. Through a combination of SEO, Local SEO, CRO, content optimization,
+        and Google Business Profile management, the website was transformed into a stronger
+        lead-generation platform while improving visibility across key treatment-related searches.
+    </p>
+
+</div>
+
+<div class="content-card">
+
+    <h2>SEO & CRO Audit</h2>
+
+    <ul>
+        <li>Conducted a comprehensive SEO and CRO audit.</li>
+        <li>Identified traffic, content, UX and conversion bottlenecks.</li>
+        <li>Performed competitor analysis and content gap analysis.</li>
+        <li>Researched high-intent treatment keywords.</li>
+        <li>Developed a growth roadmap based on search demand and user intent.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>On-Page SEO Optimization</h2>
+
+    <ul>
+        <li>Optimized title tags and meta descriptions.</li>
+        <li>Improved heading hierarchy across treatment pages.</li>
+        <li>Enhanced service page content using semantic SEO principles.</li>
+        <li>Strengthened internal linking architecture.</li>
+        <li>Improved crawlability and content discoverability.</li>
+        <li>Optimized website architecture for improved search visibility.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Location-Based SEO Strategy</h2>
+
+    <ul>
+        <li>Created location-specific landing pages.</li>
+        <li>Targeted key cities and local service areas.</li>
+        <li>Improved local relevance and keyword targeting.</li>
+        <li>Expanded local keyword coverage.</li>
+        <li>Strengthened location-based search visibility.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Semantic SEO Implementation</h2>
+
+    <ul>
+        <li>Implemented FAQ optimization.</li>
+        <li>Applied entity-based content optimization.</li>
+        <li>Improved content hierarchy and topical relevance.</li>
+        <li>Enhanced internal linking between treatment pages.</li>
+        <li>Strengthened semantic relationships across content.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Conversion Rate Optimization (CRO)</h2>
+
+    <ul>
+        <li>Implemented strategic CTA placement.</li>
+        <li>Added WhatsApp enquiry functionality.</li>
+        <li>Integrated click-to-call buttons.</li>
+        <li>Optimized lead generation forms.</li>
+        <li>Improved enquiry-focused user journeys.</li>
+        <li>Enhanced landing page conversion opportunities.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Google Business Profile Optimization</h2>
+
+    <ul>
+        <li>Managed and optimized Google Business Profiles.</li>
+        <li>Improved local map visibility.</li>
+        <li>Enhanced local engagement signals.</li>
+        <li>Strengthened local search presence.</li>
+        <li>Supported review and profile growth.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Keyword Ranking Highlights</h2>
+
+    <table class="keyword-table">
+
+        <tr>
+            <th>Keyword</th>
+            <th>Ranking</th>
+        </tr>
+
+        <tr>
+            <td>Skin Tag Removal Beaconsfield</td>
+            <td>Page 1</td>
+        </tr>
+
+        <tr>
+            <td>Skin Clinic Beaconsfield</td>
+            <td>Page 1</td>
+        </tr>
+
+        <tr>
+            <td>Laser Hair Removal Beaconsfield</td>
+            <td>Page 1</td>
+        </tr>
+
+        <tr>
+            <td>Mole Removal Beaconsfield</td>
+            <td>Page 1</td>
+        </tr>
+
+        <tr>
+            <td>Beaconsfield Skin Clinic</td>
+            <td>Page 1</td>
+        </tr>
+
+        <tr>
+            <td>Hydrafacial Beaconsfield</td>
+            <td>Page 1</td>
+        </tr>
+
+        <tr>
+            <td>Sebaceous Hyperplasia Removal London</td>
+            <td>Page 1</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Key Results Achieved</h2>
+
+    <ul>
+        <li>Achieved first-page rankings for multiple high-intent treatment keywords.</li>
+        <li>Improved search visibility through technical SEO and content optimization.</li>
+        <li>Increased organic clicks and user engagement through CTR improvements.</li>
+        <li>Enhanced lead generation through CRO-focused landing page optimization.</li>
+        <li>Improved local visibility through Google Business Profile optimization.</li>
+        <li>Expanded local search presence through location-focused SEO strategies.</li>
+        <li>Strengthened authority through content promotion and backlink acquisition.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Evidence</h2>
+
+    <div class="case-evidence">
+
+        <img src="img/skin1.jpeg" alt="">
+
+    </div>
+
+</div>
+
+`
+},
+
+iso:{
+
+title:"ISO Certification Consultancy",
+
+content:`
+
+<div class="project-hero">
+
+    <span class="project-tag">
+        International SEO Project
+    </span>
+
+    <h1>ISO Certification Consultancy</h1>
+
+    <p>
+        Planned and executed an International SEO strategy focused on improving
+        national search visibility, lead generation, and keyword rankings for
+        ISO certification services. The campaign targeted high-intent certification
+        keywords and national-level search opportunities across the UK market.
+    </p>
+
+</div>
+
+<div class="result-grid">
+
+    <div class="result-box">
+        <h3>#1</h3>
+        <p>ISO 45001 Certification</p>
+    </div>
+
+    <div class="result-box">
+        <h3>#2</h3>
+        <p>ISO Certification London</p>
+    </div>
+
+    <div class="result-box">
+        <h3>#2</h3>
+        <p>ISO Consultancy London</p>
+    </div>
+
+    <div class="result-box">
+        <h3>National</h3>
+        <p>SEO Visibility</p>
+    </div>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Overview</h2>
+
+    <p>
+        The objective was to increase national search visibility for ISO certification
+        services, improve lead generation opportunities, and strengthen organic rankings
+        for highly competitive certification-related keywords. The project focused on
+        International SEO, semantic content optimization, CRO enhancements, and
+        service page expansion.
+    </p>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Keyword Research & Search Intent Analysis</h2>
+
+    <ul>
+        <li>Conducted extensive keyword research for certification services.</li>
+        <li>Identified high-value national search opportunities.</li>
+        <li>Mapped search intent across ISO certification services.</li>
+        <li>Researched competitor keyword strategies.</li>
+        <li>Built keyword-focused content recommendations.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>National SEO Strategy</h2>
+
+    <ul>
+        <li>Developed and optimized national service pages.</li>
+        <li>Created keyword-focused landing page structures.</li>
+        <li>Expanded service content targeting certification searches.</li>
+        <li>Improved topical authority through content optimization.</li>
+        <li>Strengthened keyword relevance across core pages.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>On-Page SEO Optimization</h2>
+
+    <ul>
+        <li>Optimized title tags and meta descriptions.</li>
+        <li>Improved heading hierarchy and content structure.</li>
+        <li>Implemented FAQ sections for additional keyword coverage.</li>
+        <li>Enhanced internal linking architecture.</li>
+        <li>Applied semantic SEO and entity optimization strategies.</li>
+        <li>Improved content readability and user experience.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Conversion Rate Optimization (CRO)</h2>
+
+    <ul>
+        <li>Implemented strategic CTA placement.</li>
+        <li>Optimized enquiry forms for lead generation.</li>
+        <li>Improved user journey pathways.</li>
+        <li>Enhanced conversion-focused landing pages.</li>
+        <li>Reduced friction within the enquiry process.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Performance Monitoring & Analytics</h2>
+
+    <ul>
+        <li>Monitored keyword rankings through Google Search Console.</li>
+        <li>Tracked user engagement and page performance.</li>
+        <li>Measured lead-generation opportunities.</li>
+        <li>Analyzed search trends and optimization opportunities.</li>
+        <li>Continuously refined SEO strategy based on performance data.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Keyword Ranking Highlights</h2>
+
+    <table class="keyword-table">
+
+        <thead>
+            <tr>
+                <th>Keyword</th>
+                <th>Position</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>ISO 45001 Certification</td>
+                <td>#1</td>
+                <td>🏆 Ranking</td>
+            </tr>
+
+            <tr>
+                <td>ISO Certification London</td>
+                <td>#2</td>
+                <td>🚀 Ranking</td>
+            </tr>
+
+            <tr>
+                <td>ISO Consultancy London</td>
+                <td>#2</td>
+                <td>🚀 Ranking</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Key Results Achieved</h2>
+
+    <ul>
+        <li>Achieved Page 1 rankings for multiple high-intent ISO certification keywords.</li>
+        <li>Secured Position #1 for "ISO 45001 Certification".</li>
+        <li>Secured Position #2 for "ISO Certification London".</li>
+        <li>Secured Position #2 for "ISO Consultancy London".</li>
+        <li>Improved national search visibility across certification services.</li>
+        <li>Enhanced lead-generation opportunities through SEO and CRO improvements.</li>
+        <li>Strengthened organic search presence through optimized service pages.</li>
+        <li>Increased topical authority using semantic SEO and keyword-focused content.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Evidence</h2>
+
+    <div class="case-evidence">
+
+        <img src="img/iso.jpeg" alt="">
+    
+
+    </div>
+
+</div>
+
+`
+},
+
+thirumala:{
+
+title:"Thirumala Roofings & Structurals",
+
+content:`
+
+<div class="project-hero">
+
+    <span class="project-tag">
+        SEO | Google Ads | Local SEO | WordPress Development
+    </span>
+
+    <h1>Thirumala Roofings & Structurals</h1>
+
+    <p>
+        Led the complete digital growth strategy for Thirumala Roofings & Structurals,
+        including WordPress website management, SEO, Google Ads, Local SEO,
+        Google Business Profile optimization, Meta Ads, social media management,
+        and content marketing. The objective was to improve online visibility,
+        generate qualified construction enquiries, and establish the company as
+        a leading roofing and PEB construction provider in Chennai.
+    </p>
+
+</div>
+
+<div class="result-grid">
+
+    <div class="result-box">
+        <h3>68.7K+</h3>
+        <p>Search Impressions</p>
+    </div>
+
+    <div class="result-box">
+        <h3>1.15K+</h3>
+        <p>Organic Clicks</p>
+    </div>
+
+    <div class="result-box">
+        <h3>#1</h3>
+        <p>Indoor Stadium Contractors</p>
+    </div>
+
+    <div class="result-box">
+        <h3>AI</h3>
+        <p>Overview Mention</p>
+    </div>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Overview</h2>
+
+    <p>
+        Managed the complete digital presence of Thirumala Roofings & Structurals,
+        focusing on SEO, Google Ads, Meta Ads, Local SEO, WordPress management,
+        and lead generation. The project aimed to increase search visibility,
+        improve rankings for commercial construction keywords, generate enquiries,
+        and build a strong online brand presence across Chennai and Tamil Nadu.
+    </p>
+
+</div>
+
+<div class="content-card">
+
+    <h2>SEO Strategy</h2>
+
+    <ul>
+        <li>Performed keyword research and competitor analysis.</li>
+        <li>Created SEO-focused service page structures.</li>
+        <li>Optimized title tags, meta descriptions and headings.</li>
+        <li>Implemented FAQ schema and structured data.</li>
+        <li>Improved internal linking architecture.</li>
+        <li>Optimized service pages for local search intent.</li>
+        <li>Published SEO-focused content and blogs.</li>
+        <li>Implemented semantic SEO strategies.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Technical SEO & Website Optimization</h2>
+
+    <ul>
+        <li>Managed WordPress website optimization.</li>
+        <li>Improved indexing and crawlability.</li>
+        <li>Optimized Core Web Vitals performance.</li>
+        <li>Enhanced mobile usability and page speed.</li>
+        <li>Implemented schema markup.</li>
+        <li>Improved URL structures and navigation.</li>
+        <li>Resolved technical SEO issues impacting rankings.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Off-Page SEO & Authority Building</h2>
+
+    <ul>
+        <li>Built high-quality backlinks from relevant websites.</li>
+        <li>Performed local citation building.</li>
+        <li>Created business directory profiles.</li>
+        <li>Strengthened local authority signals.</li>
+        <li>Supported organic growth through content promotion.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Google Business Profile Optimization</h2>
+
+    <ul>
+        <li>Created and optimized Google Business Profile.</li>
+        <li>Published regular updates and business posts.</li>
+        <li>Optimized services and business information.</li>
+        <li>Improved local map visibility.</li>
+        <li>Enhanced local lead generation opportunities.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Google Ads & Paid Marketing</h2>
+
+    <ul>
+        <li>Created and managed Google Search campaigns.</li>
+        <li>Optimized keyword targeting and ad copy.</li>
+        <li>Implemented conversion-focused landing pages.</li>
+        <li>Monitored campaign performance and budget allocation.</li>
+        <li>Generated qualified roofing and construction enquiries.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Social Media & Branding</h2>
+
+    <ul>
+        <li>Managed social media content strategy.</li>
+        <li>Created marketing creatives using Canva.</li>
+        <li>Published branding and project showcase content.</li>
+        <li>Supported lead generation campaigns through Meta Ads.</li>
+        <li>Improved brand visibility and audience engagement.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Keyword Ranking Highlights</h2>
+
+    <table class="keyword-table">
+
+        <thead>
+
+            <tr>
+                <th>Keyword</th>
+                <th>Position</th>
+                <th>Status</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Indoor Stadium Shed Contractors in Chennai</td>
+                <td>#1</td>
+                <td>🏆 Ranking</td>
+            </tr>
+
+            <tr>
+                <td>PEB Manufacturers in Chennai</td>
+                <td>#1</td>
+                <td>🏆 Ranking</td>
+            </tr>
+
+            <tr>
+                <td>PEB Construction Company Chennai</td>
+                <td>Page 1</td>
+                <td>🚀 Ranking</td>
+            </tr>
+
+            <tr>
+                <td>Roofing Contractors Chennai</td>
+                <td>Page 1</td>
+                <td>📈 Growth</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<div class="content-card">
+
+    <h2>AI Overview Achievement</h2>
+
+    <div class="ai-box">
+
+        <h4>Featured in Google AI Overview</h4>
+
+        <p>
+            Thirumala Roofings & Structurals was cited within Google's
+            AI-generated answer for "Indoor Stadium Shed Contractors in Chennai",
+            strengthening brand authority and visibility within AI-powered search results.
+        </p>
+
+    </div>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Performance Results</h2>
+
+    <ul>
+        <li>Generated 68.7K+ Search Impressions.</li>
+        <li>Generated 1.15K+ Organic Clicks.</li>
+        <li>Achieved Position #1 for Indoor Stadium Shed Contractors in Chennai.</li>
+        <li>Achieved Position #1 for PEB Manufacturers in Chennai.</li>
+        <li>Featured in Google AI Overview results.</li>
+        <li>Improved local visibility through Google Business Profile optimization.</li>
+        <li>Generated qualified leads through SEO and Google Ads campaigns.</li>
+        <li>Built a stronger digital presence across search, maps, and social media.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Evidence</h2>
+
+    <div class="case-evidence">
+
+        <img src="img/trs1.png" alt="">
+        <img src="img/trs2.png" alt="">
+        <img src="img/trs3.png" alt="">
+        <img src="img/trs4.png" alt="">
+         <img src="img/thirum1.png" alt="">
+    
+
+    </div>
+
+</div>
+
+`
+},
+
+tirupurtaxi:{
+
+title:"Tirupur Taxi",
+
+content:`
+
+<div class="project-hero">
+
+    <span class="project-tag">
+        Local SEO | Website Redesign | On-Page SEO
+    </span>
+
+    <h1>Tirupur Taxi</h1>
+
+    <p>
+        One of my first SEO projects focused on improving local search visibility
+        for a taxi service business in Tirupur. The project involved competitor
+        research, website redesign, technical optimization, keyword targeting,
+        and local SEO implementation to improve rankings and generate more calls
+        and booking enquiries.
+    </p>
+
+</div>
+
+<div class="result-grid">
+
+    <div class="result-box">
+        <h3>#1</h3>
+        <p>Best Taxi Service in Tirupur</p>
+    </div>
+
+    <div class="result-box">
+        <h3>#1</h3>
+        <p>Call Taxi Tirupur</p>
+    </div>
+
+    <div class="result-box">
+        <h3>HTML</h3>
+        <p>Website Redesign</p>
+    </div>
+
+    <div class="result-box">
+        <h3>Local SEO</h3>
+        <p>Growth</p>
+    </div>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Overview</h2>
+
+    <p>
+        The objective was to improve online visibility for a local taxi business
+        in Tirupur and increase booking enquiries through organic search.
+        A complete SEO-focused website structure was planned and implemented
+        after analyzing competitors and local search demand.
+    </p>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Website Development & Redesign</h2>
+
+    <ul>
+        <li>Redesigned the website using HTML, CSS and JavaScript.</li>
+        <li>Improved website structure and navigation.</li>
+        <li>Created SEO-friendly page layouts.</li>
+        <li>Optimized mobile responsiveness.</li>
+        <li>Enhanced user experience and usability.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>SEO Research & Planning</h2>
+
+    <ul>
+        <li>Conducted local competitor analysis.</li>
+        <li>Researched high-intent taxi service keywords.</li>
+        <li>Analyzed search behaviour and booking-related queries.</li>
+        <li>Created keyword-focused content strategy.</li>
+        <li>Developed an SEO roadmap targeting local searches.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>On-Page SEO Implementation</h2>
+
+    <ul>
+        <li>Optimized title tags and meta descriptions.</li>
+        <li>Improved heading structure and content hierarchy.</li>
+        <li>Implemented keyword-focused service content.</li>
+        <li>Enhanced internal linking.</li>
+        <li>Optimized images and page elements.</li>
+        <li>Improved local search relevance.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Technical SEO Improvements</h2>
+
+    <ul>
+        <li>Improved crawlability and indexability.</li>
+        <li>Optimized website performance.</li>
+        <li>Enhanced mobile usability.</li>
+        <li>Implemented SEO-friendly URLs.</li>
+        <li>Improved page loading speed.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Keyword Ranking Highlights</h2>
+
+    <table class="keyword-table">
+
+        <thead>
+            <tr>
+                <th>Keyword</th>
+                <th>Position</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Best Taxi Service in Tirupur</td>
+                <td>#1</td>
+                <td>🏆 Ranking</td>
+            </tr>
+
+            <tr>
+                <td>Call Taxi Tirupur</td>
+                <td>#1</td>
+                <td>🏆 Ranking</td>
+            </tr>
+
+            <tr>
+                <td>No 1 Call Taxi Tirupur</td>
+                <td>Top Rankings</td>
+                <td>🚀 Growth</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Key Results Achieved</h2>
+
+    <ul>
+        <li>Achieved Position #1 for "Best Taxi Service in Tirupur".</li>
+        <li>Achieved Position #1 for "Call Taxi Tirupur".</li>
+        <li>Improved local search visibility across Tirupur.</li>
+        <li>Built an SEO-friendly website structure from scratch.</li>
+        <li>Strengthened local keyword relevance.</li>
+        <li>Improved organic traffic and booking opportunities.</li>
+        <li>Successfully outranked local competitors for key search terms.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Evidence</h2>
+
+    <div class="case-evidence">
+
+        <img src="img/tirupurtaxi1.png" alt="">
+        <img src="img/tirupur2.png" alt="">
+        
+
+    </div>
+
+</div>
+
+`
+},
+
+
+natours:{
+
+title:"NA Tours & Travels",
+
+content:`
+
+<div class="project-hero">
+
+    <span class="project-tag">
+        WordPress Development | Local SEO | GMB Optimization
+    </span>
+
+    <h1>NA Tours & Travels</h1>
+
+    <p>
+        Designed, developed, and optimized a complete WordPress website for
+        NA Tours & Travels. The project focused on improving local search visibility,
+        increasing travel booking enquiries, and building a strong online presence
+        within the Villupuram travel market through Local SEO, Google Business Profile
+        optimization, and conversion-focused website design.
+    </p>
+
+</div>
+
+<div class="result-grid">
+
+    <div class="result-box">
+        <h3>#2</h3>
+        <p>Travel Booking Services in Villupuram</p>
+    </div>
+
+    <div class="result-box">
+        <h3>WordPress</h3>
+        <p>Website Built</p>
+    </div>
+
+    <div class="result-box">
+        <h3>Local SEO</h3>
+        <p>Optimization</p>
+    </div>
+
+    <div class="result-box">
+        <h3>GMB</h3>
+        <p>Profile Setup</p>
+    </div>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Overview</h2>
+
+    <p>
+        NA Tours & Travels required a professional online presence to attract
+        customers searching for taxi, cab, airport transfer, and travel booking
+        services in Villupuram. The project included WordPress website development,
+        Local SEO implementation, Google Business Profile optimization, schema markup,
+        and conversion-focused design improvements.
+    </p>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Website Development</h2>
+
+    <ul>
+        <li>Designed and developed a complete WordPress website.</li>
+        <li>Created a user-friendly travel booking website structure.</li>
+        <li>Implemented responsive mobile-friendly design.</li>
+        <li>Built service-focused landing pages.</li>
+        <li>Improved navigation and user experience.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Local SEO Implementation</h2>
+
+    <ul>
+        <li>Performed local keyword research.</li>
+        <li>Optimized service pages for local search intent.</li>
+        <li>Implemented location-based content optimization.</li>
+        <li>Improved local search relevance signals.</li>
+        <li>Strengthened visibility for Villupuram travel searches.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>On-Page SEO Optimization</h2>
+
+    <ul>
+        <li>Optimized title tags and meta descriptions.</li>
+        <li>Created keyword-focused content strategy.</li>
+        <li>Improved heading hierarchy.</li>
+        <li>Implemented internal linking.</li>
+        <li>Optimized images and page elements.</li>
+        <li>Enhanced search engine visibility.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Schema & Technical SEO</h2>
+
+    <ul>
+        <li>Implemented Local Business Schema Markup.</li>
+        <li>Improved search engine understanding.</li>
+        <li>Enhanced local SEO signals.</li>
+        <li>Optimized website crawlability.</li>
+        <li>Improved indexability of key service pages.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Google Business Profile Optimization</h2>
+
+    <ul>
+        <li>Created and optimized Google Business Profile.</li>
+        <li>Configured business information and services.</li>
+        <li>Improved local map visibility.</li>
+        <li>Strengthened local trust signals.</li>
+        <li>Enhanced travel booking discovery opportunities.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Conversion Rate Optimization</h2>
+
+    <ul>
+        <li>Designed strong call-to-action sections.</li>
+        <li>Optimized enquiry and booking pathways.</li>
+        <li>Improved lead capture opportunities.</li>
+        <li>Created booking-focused landing page layouts.</li>
+        <li>Enhanced user journey for travel enquiries.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Keyword Ranking Highlights</h2>
+
+    <table class="keyword-table">
+
+        <thead>
+            <tr>
+                <th>Keyword</th>
+                <th>Position</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Travel Booking Services in Villupuram</td>
+                <td>#2</td>
+                <td>🚀 Ranking</td>
+            </tr>
+
+            <tr>
+                <td>Villupuram Travel Services</td>
+                <td>Page 1</td>
+                <td>📈 Growth</td>
+            </tr>
+
+            <tr>
+                <td>Taxi Services Villupuram</td>
+                <td>Page 1</td>
+                <td>📈 Growth</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Key Results Achieved</h2>
+
+    <ul>
+        <li>Successfully designed and launched a complete WordPress website.</li>
+        <li>Achieved #2 ranking for "Travel Booking Services in Villupuram".</li>
+        <li>Improved local search visibility through Local SEO implementation.</li>
+        <li>Enhanced Google Maps presence through Google Business Profile optimization.</li>
+        <li>Implemented Local Schema Markup for stronger local SEO signals.</li>
+        <li>Improved lead generation through conversion-focused website design.</li>
+        <li>Created a scalable digital presence for long-term growth.</li>
+    </ul>
+
+</div>
+
+<div class="content-card">
+
+    <h2>Project Evidence</h2>
+
+    <div class="case-evidence">
+
+        <img src="img/na tours.png" alt="">
+
+    </div>
+
+</div>
+
+`
+},
+
+};
+
+const modal =
+document.getElementById("caseModal");
+
+const modalContent =
+document.getElementById("modalContent");
+
+document.querySelectorAll(".view-btn")
+.forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+const project =
+btn.dataset.project;
+
+modalContent.innerHTML =
+projectData[project].content;
+
+modal.classList.add("active");
+
+});
+
+});
+
+document
+.querySelector(".close-modal")
+.addEventListener("click",()=>{
+
+modal.classList.remove("active");
+
+});
+
+document
+.querySelector(".modal-overlay")
+.addEventListener("click",()=>{
+
+modal.classList.remove("active");
+
+});
+</script>
+
+</body>
+</html>
